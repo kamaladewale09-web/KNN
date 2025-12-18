@@ -12,7 +12,7 @@ left_column,right_column= st.columns(2)
 age = left_column.number_input('age', min_value = 18.000000, max_value = 90.000000)
 physical_score = right_column.number_input('physical_score', min_value = -0.000000, max_value = 50.00000)
 #loading the model
-with open('svm_class.sav', 'rb') as m:
+with open('knn_reg.sav', 'rb') as m:
     model = pickle.load(m)
 
 #input as dataframes
